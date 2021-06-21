@@ -1,0 +1,43 @@
+board = new_board()
+
+# Loop through turns
+# Loop until game is over:
+  # Todo game over
+  # Game is over When
+  # Board is full ||  # Someone wins
+    # When their symbols are three in a row
+
+### new_board
+
+#  [
+#   ['X', None, 'O'],
+#   ['O', None, None],
+#   [None, 'X', 'X']
+# ]
+
+
+# Print the board
+  render(board)
+
+
+
+# Get the move player will make
+move_coordinate = get_move()
+
+# Make the move inputted
+make move(board, move_coordinate, current_player)
+
+# Winner
+winner = get_winner(board)
+
+# If there is a winner, award
+if winner is not Null:
+  print "Winner is " winner
+
+# If there is no winner and the board is full
+# exit  Loop
+if is_boardFull(board)
+  print "DRAW"
+  break
+
+# Repeat until game is over
